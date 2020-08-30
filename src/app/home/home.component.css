@@ -1,0 +1,11 @@
+body {
+    /* background-image: url('./assets/imgs/b1.jpg'); */
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+}
