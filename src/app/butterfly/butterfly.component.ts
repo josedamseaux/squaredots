@@ -18,7 +18,6 @@ export class ButterflyComponent implements OnInit  {
 // tslint:disable-next-line: use-lifecycle-interface
 ngOnInit(){
   this.butterfly = this.pixelService.getButterflies();
-  console.log(this.butterfly);
 }
 
 }
