@@ -1,0 +1,17 @@
+  
+  <input type="text"(input)="filtrar($event)" placeholder="search pixel image..." class="searchImg">
+  <br><br>
+  <div class="container main-container text-center d-flex justify-content-between" >
+  
+      <div class="card-columns text-center" >
+        <div class="card text-center" style="width: 77%;" *ngFor="let titulo of titulos; let m = index">
+          <a (click)="verTitulo(m)" type="button" class="btn btn-block btn-light mt-2">
+            <img [src]="titulo.img" class="card-img-top text-center" alt="...">
+            <p class="card-text mt-1">{{titulo.nombre}}</p>
+            </a>
+        </div>
+      </div>
+  </div>
+  <app-footer></app-footer>
+  <app-butterfly></app-butterfly>
+  <app-pixelazite></app-pixelazite>
